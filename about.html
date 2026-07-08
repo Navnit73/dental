@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Susquehanna River Valley Dental Health Clinic</title>
+    <meta name="description" content="Learn about our community dental clinic and our mission to provide affordable dentistry in Sunbury, PA.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="var(--primary)" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C8.68629 2 6 4.68629 6 8C6 9.88295 6.86877 11.5644 8.22557 12.6517C8.71804 13.0464 9 13.6521 9 14.2857V19.5C9 20.8807 10.1193 22 11.5 22H12.5C13.8807 22 15 20.8807 15 19.5V14.2857C15 13.6521 15.282 13.0464 15.7744 12.6517C17.1312 11.5644 18 9.88295 18 8C18 4.68629 15.3137 2 12 2Z"/>
+                </svg>
+                SRVDHC
+            </a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="programs.html">Low Income Program</a></li>
+                <li><a href="contact.html" class="btn btn-primary" style="color: white; padding: 10px 20px;">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>About Us</h1>
+                <p>Dedicated to serving Northumberland, Union and Snyder County residents.</p>
+            </div>
+        </section>
+
+        <section class="section-padding">
+            <div class="container content-grid">
+                <div class="content-text">
+                    <h2>Our Mission</h2>
+                    <p>Susquehanna River Valley Dental Health Clinic is a community dental clinic with a mission to provide patient-centered, affordable dentistry to families and individuals in our area.</p>
+                    <p>We understand that access to quality dental care is essential for overall health, which is why we break down barriers to treatment and focus on comprehensive, compassionate care.</p>
+                </div>
+                <div class="content-image">
+                    <img src="images/clinic_room.png" alt="Modern dental clinic room" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding bg-light">
+            <div class="container">
+                <div class="text-center" style="max-width: 800px; margin: 0 auto;">
+                    <h2>Our Values</h2>
+                    <p style="margin-bottom: 40px; font-size: 1.1rem;">Everything we do is guided by our core values.</p>
+                </div>
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-icon">❤️</div>
+                        <h3>Compassion</h3>
+                        <p>We treat every patient with dignity, respect, and empathy, ensuring a comfortable experience.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🌟</div>
+                        <h3>Excellence</h3>
+                        <p>We uphold the highest standards in clinical care, utilizing modern equipment and techniques.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🤝</div>
+                        <h3>Accessibility</h3>
+                        <p>We strive to make high-quality dental care affordable and accessible to our entire community.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding">
+            <div class="container text-center">
+                <h2>Meet Our Team</h2>
+                <p style="margin-bottom: 40px;">Our dedicated professionals are here to make you smile.</p>
+                <div style="max-width: 800px; margin: 0 auto;">
+                    <img src="images/dentist_team.png" alt="Our dental team" style="width: 100%; border-radius: var(--border-radius); box-shadow: var(--shadow);">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>SRVDHC</h3>
+                    <p>Affordable, high-quality dental care for the Sunbury community.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="programs.html">Low Income Program</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li>335 Market Street,<br>Sunbury, PA 17801</li>
+                        <li>(570) 286-7500</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Susquehanna River Valley Dental Health Clinic. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+        
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

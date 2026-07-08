@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Susquehanna River Valley Dental Health Clinic</title>
+    <meta name="description" content="Contact our Sunbury dental clinic to schedule an appointment.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="var(--primary)" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C8.68629 2 6 4.68629 6 8C6 9.88295 6.86877 11.5644 8.22557 12.6517C8.71804 13.0464 9 13.6521 9 14.2857V19.5C9 20.8807 10.1193 22 11.5 22H12.5C13.8807 22 15 20.8807 15 19.5V14.2857C15 13.6521 15.282 13.0464 15.7744 12.6517C17.1312 11.5644 18 9.88295 18 8C18 4.68629 15.3137 2 12 2Z"/>
+                </svg>
+                SRVDHC
+            </a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="programs.html">Low Income Program</a></li>
+                <li><a href="contact.html" class="active btn btn-primary" style="color: white; padding: 10px 20px;">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p>We are here to answer your questions and schedule your visit.</p>
+            </div>
+        </section>
+
+        <section class="section-padding">
+            <div class="container contact-grid">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    
+                    <div class="contact-item">
+                        <h4>Address</h4>
+                        <p>335 Market Street<br>Sunbury, PA 17801</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h4>Phone</h4>
+                        <p>(570) 286-7500</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h4>Clinic Hours</h4>
+                        <p>Wednesday: 7:30 AM - 5:00 PM<br>Thursday: 7:30 AM - 4:00 PM</p>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3>Send a Message</h3>
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Your full name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone" placeholder="(570) 123-4567">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required placeholder="How can we help you?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Request</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3013.921319717751!2d-76.79728268458145!3d40.85923187931557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89cf494d13e3146d%3A0xc34eb3357546a9b!2s335%20Market%20St%2C%20Sunbury%2C%20PA%2017801!5e0!3m2!1sen!2sus!4v1655000000000!5m2!1sen!2sus" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>SRVDHC</h3>
+                    <p>Affordable, high-quality dental care for the Sunbury community.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="programs.html">Low Income Program</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li>335 Market Street,<br>Sunbury, PA 17801</li>
+                        <li>(570) 286-7500</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Susquehanna River Valley Dental Health Clinic. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+        
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

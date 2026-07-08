@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | Susquehanna River Valley Dental Health Clinic</title>
+    <meta name="description" content="Explore our preventive, restorative, and community dental care services.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="var(--primary)" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C8.68629 2 6 4.68629 6 8C6 9.88295 6.86877 11.5644 8.22557 12.6517C8.71804 13.0464 9 13.6521 9 14.2857V19.5C9 20.8807 10.1193 22 11.5 22H12.5C13.8807 22 15 20.8807 15 19.5V14.2857C15 13.6521 15.282 13.0464 15.7744 12.6517C17.1312 11.5644 18 9.88295 18 8C18 4.68629 15.3137 2 12 2Z"/>
+                </svg>
+                SRVDHC
+            </a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="programs.html">Low Income Program</a></li>
+                <li><a href="contact.html" class="btn btn-primary" style="color: white; padding: 10px 20px;">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>Our Services</h1>
+                <p>Comprehensive dental care for the entire family.</p>
+            </div>
+        </section>
+
+        <section class="section-padding">
+            <div class="container">
+                <div class="cards-grid">
+                    <div class="card" style="text-align: left;">
+                        <div class="card-icon" style="text-align: center;">🦷</div>
+                        <h3 class="text-center">Preventive Dental Care</h3>
+                        <p class="text-center">The foundation of a healthy smile starts here.</p>
+                        <ul>
+                            <li>Comprehensive Exams</li>
+                            <li>Professional Cleanings</li>
+                            <li>Oral Hygiene Instruction</li>
+                            <li>Fluoride Treatments</li>
+                            <li>Dental Sealants</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="card" style="text-align: left;">
+                        <div class="card-icon" style="text-align: center;">✨</div>
+                        <h3 class="text-center">Restorative Dentistry</h3>
+                        <p class="text-center">Restoring function and aesthetics to your teeth.</p>
+                        <ul>
+                            <li>Tooth-Colored Fillings</li>
+                            <li>Custom Treatment Planning</li>
+                            <li>Crowns & Bridges</li>
+                            <li>Extractions</li>
+                            <li>Denture Care</li>
+                        </ul>
+                    </div>
+
+                    <div class="card" style="text-align: left;">
+                        <div class="card-icon" style="text-align: center;">🤝</div>
+                        <h3 class="text-center">Community Dental Care</h3>
+                        <p class="text-center">Dedicated to the well-being of our neighbors.</p>
+                        <ul>
+                            <li>Community Education</li>
+                            <li>Affordable Support Programs</li>
+                            <li>School Screenings</li>
+                            <li>Preventive Outreach</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="text-center" style="margin-top: 60px;">
+                    <h2>Ready to schedule your visit?</h2>
+                    <p style="margin: 20px 0;">Contact our friendly team today to book your appointment.</p>
+                    <a href="contact.html" class="btn btn-primary">Request Appointment</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>SRVDHC</h3>
+                    <p>Affordable, high-quality dental care for the Sunbury community.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="programs.html">Low Income Program</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li>335 Market Street,<br>Sunbury, PA 17801</li>
+                        <li>(570) 286-7500</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Susquehanna River Valley Dental Health Clinic. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+        
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
